@@ -36,7 +36,7 @@ class MST
             System.out.println(parent[i]+" - "+ i+"    "+
                                graph[i][parent[i]]);
     }
- 
+  
     // Function to construct and print MST for a graph represented
     //  using adjacency matrix representation
     void primMST(int graph[][])
