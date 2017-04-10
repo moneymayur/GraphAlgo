@@ -6,4 +6,14 @@ Method 1
  For each edge, make subsets using both the vertices of the edge. If both the vertices are in the same subset, a cycle is found.
  
  Method-3 for directed graphs
- Depth First Traversal can be used to detect cycle in a Graph. DFS for a connected graph produces a tree. There is a cycle in a graph only if there is a back edge present in the graph. A back edge is an edge that is from a node to itself (selfloop) or one of its ancestor in the tree produced by DFS. 
+Depth First Traversal can be used to detect cycle in a Graph. DFS for a connected graph produces a tree. There is a cycle in a graph only if there is a back edge present in the graph. 
+Back edge is an edge that is from a node to itself (selfloop) or one of its ancestor in the tree produced by DFS. 
+Implementation:
+two arrays -> visited[V], inStack[V]
+iteratively call(loop) function that does{//Done in order to insure we dont have a disconnected graph
+Mark the current node as visited and part of recursion stack
+Recur for all the vertices adjacent to this vertex{
+if(not visited recusrively call function that does)
+else(if visited check if present in stack then cycle detected)
+}
+}
