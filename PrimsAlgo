@@ -1,3 +1,12 @@
+Assign the value of parent to null to all and the weight as infinity for all except the first node(so that we can start from it)
+while the set is not empty{
+Pick up the vertix with least weight. Add to MST set
+Start updating the weight and parent in case the distance is lower
+}
+ O(V^2)
+
+To optimize it use min heap for finding the least element O(ELogV)
+
 // A Java program for Prim's Minimum Spanning Tree (MST) algorithm.
 // The program is for adjacency matrix representation of the graph
  
