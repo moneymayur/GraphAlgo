@@ -1,0 +1,9 @@
+Method 1
+ We do a DFS traversal of the given graph. For every visited vertex ‘v’, if there is an adjacent ‘u’ such that u is already visited and u is not parent of v, then there is a cycle in graph. If we don’t find such an adjacent for any vertex, we say that there is no cycle.
+ 
+ Method 2
+ Union and find
+ For each edge, make subsets using both the vertices of the edge. If both the vertices are in the same subset, a cycle is found.
+ 
+ Method-3 for directed graphs
+ Depth First Traversal can be used to detect cycle in a Graph. DFS for a connected graph produces a tree. There is a cycle in a graph only if there is a back edge present in the graph. A back edge is an edge that is from a node to itself (selfloop) or one of its ancestor in the tree produced by DFS. 
